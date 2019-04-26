@@ -1,8 +1,8 @@
 const API_URL = `http://localhost:3000/`
 
 const headers = {
-  Accepts: 'application/json',
-  'Content-Type': 'application/json'
+  'Content-Type': 'application/json',
+  'Accepts': 'application/json'
 }
 
 const createTweet = tweet => {
