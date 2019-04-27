@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import TweetForm from './TweetForm'
 import TweetList from './TweetList'
-import { ActionCable } from 'react-actioncable-provider'
+import { ActionCableProvider } from 'react-actioncable-provider'
 import adapter from '../services/adapter'
 
 class Feed extends Component {
