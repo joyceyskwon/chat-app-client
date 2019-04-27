@@ -3,7 +3,14 @@ import Tweet from './Tweet'
 import NewTweetInfo from './NewTweetInfo'
 
 const TweetList = ({ tweets, newTweetCount, handleDisplayTweets }) => {
-  const tweetList = tweets.map(tweet => <Tweet key={tweet.id} tweet={tweet} />)
+  
+  const tweetList = () => {
+    if (tweets.length < 1) {
+      return ""
+    } else {
+      return tweets.map(tweet => <Tweet key={tweet.id} tweet={tweet} />)
+    }
+  }
 
   return (
     <div>
