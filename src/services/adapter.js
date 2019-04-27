@@ -1,4 +1,4 @@
-const API_URL = `http://localhost:3000/`
+const API_URL = `http://localhost:3000/api/v1`
 
 const headers = {
   'Content-Type': 'application/json',

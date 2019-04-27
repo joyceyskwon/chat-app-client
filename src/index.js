@@ -7,7 +7,7 @@ import App from './components/App';
 
 
 ReactDOM.render(
-  <ActionCableProvider url="ws://localhost:3001/cable">
+  <ActionCableProvider url="ws://localhost:3000/cable">
     <App />
   </ActionCableProvider>,
   document.getElementById('root')

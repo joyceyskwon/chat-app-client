@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import TweetForm from './TweetForm'
 import TweetList from './TweetList'
-import { ActionCableProvider } from 'react-actioncable-provider'
+import { ActionCable } from 'react-actioncable-provider'
 import adapter from '../services/adapter'
 
 class Feed extends Component {
@@ -11,7 +11,7 @@ class Feed extends Component {
   }
 
   componentDidMount() {
-    adapter.fetchFeed(1)
+    adapter.fetchFeed(5)
     .then(res => {
       this.setState({
         displayedTweets: res.tweets
