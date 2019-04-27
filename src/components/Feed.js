@@ -14,7 +14,7 @@ class Feed extends Component {
     adapter.fetchFeed(5)
     .then(res => {
       this.setState({
-        displayedTweets: res.tweets
+        displayedTweets: res.tweets.reverse()
       })
     })
   }
@@ -31,8 +31,8 @@ class Feed extends Component {
     this.setState(prevState => {
       return {
         displayedTweets: [
-          ...prevState.displayedTweets,
-          ...prevState.newTweets
+          ...prevState.newTweets,
+          ...prevState.displayedTweets
         ],
         newTweets: []
       }

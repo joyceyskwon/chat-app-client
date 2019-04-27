@@ -4,6 +4,8 @@ import NewTweetInfo from './NewTweetInfo'
 
 const TweetList = ({ tweets, newTweetCount, handleDisplayTweets }) => {
 
+  // tweets are reversed props from Feed.js
+
   const tweetList = tweets.map(tweet => <Tweet key={tweet.id} tweet={tweet} />)
 
   return (
