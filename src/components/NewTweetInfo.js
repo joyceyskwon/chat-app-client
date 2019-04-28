@@ -8,7 +8,10 @@ const NewTweetInfo = ({ newTweetCount, handleDisplayTweets }) => {
   if (!newTweetCount) return null
 
   return (
-    <div onClick={handleDisplayTweets} className="ui message info">
+    <div 
+      onClick={handleDisplayTweets} 
+      className="ui message info"
+    >
       You have {newTweetCount} new {pluralizeTweets(newTweetCount)}
     </div>
   )

@@ -5,6 +5,12 @@ const headers = {
   'Accepts': 'application/json'
 }
 
+const deleteTweet = tweetId => {
+  return fetch(`${API_URL}/tweets/${tweetId}`, {
+    method: 'DELETE'
+  })
+}
+
 const createTweet = tweet => {
   return fetch(`${API_URL}/tweets`, {
     method: 'POST',

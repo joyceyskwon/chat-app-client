@@ -12,6 +12,9 @@ const Tweet = ({ tweet }) => {
             <a className="like">
               <i className="like icon" /> 4 Likes
             </a>
+            <button className="ui basic blue button" onClick={props.deleteTweet(props.tweet.id)}>
+              Delete
+            </button>
           </div>
         </div>
       </div>
