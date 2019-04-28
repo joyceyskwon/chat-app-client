@@ -25,4 +25,4 @@ const fetchFeed = feedId => {
   .then(res => res.json())
 }
 
-export default { createTweet, fetchFeed }
+export default { createTweet, deleteTweet, fetchFeed }
