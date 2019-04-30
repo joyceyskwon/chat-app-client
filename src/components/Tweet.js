@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import adapter from '../services/adapter'
 
 class Tweet extends Component {
   render() {
@@ -16,7 +15,7 @@ class Tweet extends Component {
               </a>
               <button
                 className="ui basic blue button"
-                onClick={() => adapter.deleteTweet(this.props.tweet.id)}
+                onClick={() => this.props.deleteTweet(this.props.tweet.id)}
               >
                 Delete
               </button>
