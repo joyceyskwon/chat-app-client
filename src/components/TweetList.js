@@ -5,7 +5,7 @@ import adapter from '../services/adapter'
 
 class TweetList extends Component {
   
-  deleteTweet = tweetId => adapter.deleteTweet(tweetId)
+  // deleteTweet = tweetId => adapter.deleteTweet(tweetId)
   
   // tweets are reversed props from Feed.js
   const tweetList = tweets => tweets.map(tweet => <Tweet key={tweet.id} tweet={tweet} deleteTweet={this.deleteTweet} />)
