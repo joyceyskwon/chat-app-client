@@ -13,12 +13,6 @@ class Tweet extends Component {
               <a className="like">
                 <i className="like icon" /> 4 Likes
               </a>
-              <button
-                className="ui basic blue button"
-                onClick={() => this.props.deleteTweet(this.props.tweet.id)}
-              >
-                Delete
-              </button>
             </div>
           </div>
         </div>

@@ -5,12 +5,6 @@ const headers = {
   'Accepts': 'application/json'
 }
 
-const deleteTweet = tweetId => {
-  return fetch(`${API_URL}/tweets/${tweetId}`, {
-    method: 'DELETE'
-  })
-}
-
 const createTweet = tweet => {
   return fetch(`${API_URL}/tweets`, {
     method: 'POST',
@@ -25,4 +19,4 @@ const fetchFeed = feedId => {
   .then(res => res.json())
 }
 
-export default { createTweet, deleteTweet, fetchFeed }
+export default { createTweet, fetchFeed }
