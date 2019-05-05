@@ -44,6 +44,7 @@ class Feed extends Component {
 
     return (
       <div className="Feed">
+        <h1>CHIT CHAT</h1>
         <ActionCable
           channel={{channel: 'FeedChannel'}}
           onReceived={(tweet) => {
