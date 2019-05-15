@@ -11,7 +11,7 @@ class Feed extends Component {
   }
 
   componentDidMount() {
-    adapter.fetchFeed(5)
+    adapter.fetchFeed(1)
     .then(res => {
       this.setState({
         displayedTweets: res.tweets.reverse()
