@@ -1,6 +1,6 @@
-const API_URL = `https://tweet-app-server.herokuapp.com/api/v1`
+const API_URL = `http://localhost:3000/api/v1`
 
-const API_WS_ROOT = 'https://tweet-app-server.herokuapp.com/cable'
+const API_WS_ROOT = 'ws://localhost:3000/api/v1/cable'
 
 const headers = {
   'Content-Type': 'application/json',
@@ -8,6 +8,7 @@ const headers = {
 }
 
 const createTweet = tweet => {
+  debugger
   return fetch(`${API_URL}/tweets`, {
     method: 'POST',
     headers,
